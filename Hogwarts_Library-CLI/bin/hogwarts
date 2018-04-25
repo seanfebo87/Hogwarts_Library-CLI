@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+require "bundler/setup"
+require_relative '../lib/hogwarts/cli'
+require_relative '../lib/hogwarts/studies'
+require_relative '../lib/hogwarts/atlas'
+
+Hogwarts::CLI.new.start 
