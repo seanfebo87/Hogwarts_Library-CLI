@@ -50,4 +50,9 @@ def atlas(atlas)
       puts "#{i}. #{title.name}"
     end
 end
+
+def goodbye
+  abort("Thanks for coming!")
+end
+
 end
