@@ -12,3 +12,17 @@ class Hogwarts::Textbooks
      @url = url
      @@all << self
     end
+
+    def self.scrape_textbooks
+        textbooks = []
+        doc = Nokogiri::HTML(open("https://www.hp-lexicon.org/list/books/textbooks/"))
+        info = doc.css(".col-md-12 ul li a")
+        info.each do |n|
+            textbook = {}
+            textbook[:name] = n.text
+            textbook[:url] = n.attr("href")
+            textbooks << book
+
+        end
+        textbooks
+    end
