@@ -1,3 +1,6 @@
+require 'nokogiri'
+require 'open-uri'
+
 class Hogwarts::Textbooks
     attr_accessor :name, :url
     @@all = []
