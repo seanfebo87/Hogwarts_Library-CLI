@@ -44,4 +44,10 @@ def textbooks(books)
     end
 end
 
+def atlas(atlas)
+    puts ""
+    @@atlas.each.with_index(1) do |title, i|
+      puts "#{i}. #{title.name}"
+    end
+end
 end
