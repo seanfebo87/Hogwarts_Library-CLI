@@ -32,7 +32,7 @@ def menu
     input = gets.strip
       case input
       when "1"
-        textbooks(@@books)
+        textbooks(@@textbooks)
       when "2"
         atlas(@@atlas)
       when "exit"
