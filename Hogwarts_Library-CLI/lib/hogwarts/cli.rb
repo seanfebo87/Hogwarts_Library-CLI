@@ -77,6 +77,10 @@ def atlas(atlas)
     @@atlas.each.with_index(1) do |title, i|
       puts "#{i}. #{title.name}"
     end
+    puts ""
+    puts "Please select a map number for link to more info or type 'exit' to leave program."
+    menu_atlas
+    end
 end
 
 def goodbye
