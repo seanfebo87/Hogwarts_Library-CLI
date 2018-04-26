@@ -83,7 +83,7 @@ def atlas(atlas)
     end
 end
 
-def menu_textbook
+def menu_atlas
     input = nil
     while input != "exit"
     input = gets.strip.downcase
