@@ -22,6 +22,7 @@ def create_atlas_array
 end
 
 def menu
+    input = nil
     puts ""
     puts "Enter the number of the category you would like a list of or 'exit to leave."
     while input != "exit"
