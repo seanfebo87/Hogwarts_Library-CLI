@@ -58,7 +58,17 @@ def menu_textbook
       link = Hogwarts::Studies.all[input.to_i-1]
       puts "#{link.url}"
       puts ""
-      puts "Choose another number or type 'list' to see books again"
+      puts "Choose another number or type 'list' to see books again or 'exit' to leave program."
+        elsif input == "main"
+          start
+      elsif input == "exit"
+        goodbye
+      elsif input == "list"
+        @@books.each.with_index(1) do |title, i|
+      puts "#{i}. #{title.name}"
+    end
+      else
+          puts "Please try again!"
     end
 end
 
