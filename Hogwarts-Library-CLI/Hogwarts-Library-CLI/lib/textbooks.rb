@@ -26,4 +26,8 @@ class Hogwarts::Textbooks
         end
         textbooks
     end
+
+    def self.all
+        @@all
+    end
 end
