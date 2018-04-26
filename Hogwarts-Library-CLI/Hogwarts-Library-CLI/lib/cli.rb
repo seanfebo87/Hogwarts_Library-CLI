@@ -1,6 +1,3 @@
-require "Hogwarts/Library/CLI/version"
-
-
 class Hogwarts::CLI
 
 def start
@@ -19,6 +16,7 @@ def create_books_array
       Hogwarts::Textbooks.new(book[:name], book[:url])
     end
 end
+
 def create_atlas_array
     atlas_array = Hogwarts::Atlas.scrape_atlas
     atlas_array.map do |n|
@@ -108,6 +106,7 @@ def menu_atlas
       else
           puts "Please try again!"
     end
+end
 
 def goodbye
   abort("Thanks for coming!")
