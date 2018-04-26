@@ -1,7 +1,7 @@
 class Hogwarts::CLI
 
 def start
-    puts "Welcome to Hogwarts!"
+    puts "----------Welcome to the Hogwarts Library!----------"
     puts ""
     puts "1. TextBooks"
     puts "2. Atlas of Hogwarts"
@@ -111,7 +111,7 @@ def menu_atlas
 end
 
 def goodbye
-  abort("Thanks for coming!")
+  abort("----------Thanks for coming!----------")
 end
 
 end
