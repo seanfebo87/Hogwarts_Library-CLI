@@ -26,3 +26,4 @@ class Hogwarts::Atlas
         end
         maps
     end
+end

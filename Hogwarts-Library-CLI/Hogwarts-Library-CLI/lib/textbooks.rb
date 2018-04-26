@@ -26,3 +26,4 @@ class Hogwarts::Textbooks
         end
         textbooks
     end
+end

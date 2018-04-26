@@ -73,6 +73,7 @@ def menu_textbook
       else
           puts "Please try again!"
     end
+    end
 end
 
 def atlas(atlas)
@@ -105,6 +106,7 @@ def menu_atlas
     end
       else
           puts "Please try again!"
+    end
     end
 end
 
