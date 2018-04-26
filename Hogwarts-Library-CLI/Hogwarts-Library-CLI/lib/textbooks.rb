@@ -21,7 +21,7 @@ class Hogwarts::Textbooks
             textbook = {}
             textbook[:name] = n.text
             textbook[:url] = n.attr("href")
-            textbooks << book
+            textbooks << textbook
 
         end
         textbooks
