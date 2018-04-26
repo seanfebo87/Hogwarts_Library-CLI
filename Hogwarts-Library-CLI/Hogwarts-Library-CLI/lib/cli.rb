@@ -68,8 +68,8 @@ def menu_textbook
       elsif input == "exit"
         goodbye
       elsif input == "list"
+          puts ""
         @@textbooks.each.with_index(1) do |title, i|
-      puts ""
       puts "#{i}. #{title.name}"
     end
       else
@@ -103,8 +103,8 @@ def menu_atlas
       elsif input == "exit"
         goodbye
       elsif input == "list"
+        puts ""
         @@atlas.each.with_index(1) do |title, i|
-      puts ""
       puts "#{i}. #{title.name}"
     end
       else
