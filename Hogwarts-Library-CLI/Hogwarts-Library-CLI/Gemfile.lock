@@ -1,0 +1,20 @@
+PATH
+  remote: .
+  specs:
+    Hogwarts-Library-CLI (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (10.5.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  Hogwarts-Library-CLI!
+  bundler (~> 1.16)
+  rake (~> 10.0)
+
+BUNDLED WITH
+   1.16.1
