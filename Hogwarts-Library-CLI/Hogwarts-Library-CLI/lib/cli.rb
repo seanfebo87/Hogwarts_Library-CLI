@@ -45,7 +45,7 @@ end
 
 def textbooks(books)
     puts ""
-    @@books.each.with_index(1) do |title, i|
+    @@textbooks.each.with_index(1) do |title, i|
       puts "#{i}. #{title.name}"
     end
     puts ""
