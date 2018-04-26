@@ -50,6 +50,10 @@ def textbooks(books)
 end
 
 def menu_textbook
+    input = nil
+    while input != "exit"
+    input = gets.strip.downcase
+      if input.to_i > 0 && input.to_i <= 35
     if input.to_i > 0 && input.to_i <= 35
       link = Hogwarts::Studies.all[input.to_i-1]
       puts "#{link.url}"
