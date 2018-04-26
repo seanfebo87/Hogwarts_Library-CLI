@@ -17,6 +17,8 @@ def create_books_array
     textbooks_array = Hogwarts::Textbooks.scrape_textbooks
     textbooks_array.map do |book|
       Hogwarts::Textbooks.new(book[:name], book[:url])
+    end
+end
 def create_atlas_array
     atlas_array = Hogwarts::Atlas.scrape_atlas
     atlas_array.map do |n|
@@ -41,6 +43,7 @@ def menu
         puts "Please try again"
       end
   end
+end
 
 def textbooks(books)
     puts ""
@@ -57,7 +60,6 @@ def menu_textbook
     while input != "exit"
     input = gets.strip.downcase
       if input.to_i > 0 && input.to_i <= 35
-    if input.to_i > 0 && input.to_i <= 35
       link = Hogwarts::Textbooks.all[input.to_i-1]
       puts "#{link.url}"
       puts ""
@@ -83,14 +85,13 @@ def atlas(atlas)
     puts ""
     puts "Please select a map number for link to more info or type 'exit' to leave program."
     menu_atlas
-    end
 end
+
 
 def menu_atlas
     input = nil
     while input != "exit"
     input = gets.strip.downcase
-      if input.to_i > 0 && input.to_i <= 35
     if input.to_i > 0 && input.to_i <= 35
       link = Hogwarts::Atlas.all[input.to_i-1]
       puts "#{link.url}"
