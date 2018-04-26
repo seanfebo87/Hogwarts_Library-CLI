@@ -67,7 +67,7 @@ def menu_textbook
       elsif input == "exit"
         goodbye
       elsif input == "list"
-        @@books.each.with_index(1) do |title, i|
+        @@textbooks.each.with_index(1) do |title, i|
       puts "#{i}. #{title.name}"
     end
       else
