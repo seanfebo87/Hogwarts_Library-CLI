@@ -16,7 +16,6 @@ Gem::Specification.new do |spec|
 
 
   spec.files = Dir['lib/**/*.rb']
-  end
   spec.executables   = 'hogwarts'
   spec.require_paths = ["lib"]
 
