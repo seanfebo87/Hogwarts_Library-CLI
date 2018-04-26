@@ -1,6 +1,6 @@
 # Hogwarts::Library::CLI
 
-Welcome to the Hogwarts Library! This is a very simple gem that provides you urls for information regarding Hogwarts' textbooks and an atlas of Hogwarts. 
+Welcome to the Hogwarts Library! This is a very simple gem that provides you URLs for information regarding Hogwarts' textbooks and an atlas of Hogwarts. 
 
 ## Installation
 
