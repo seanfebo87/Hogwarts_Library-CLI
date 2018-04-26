@@ -61,7 +61,7 @@ def menu_textbook
       link = Hogwarts::Textbooks.all[input.to_i-1]
       puts "#{link.url}"
       puts ""
-      puts "Choose another number or type 'list' to see books again or 'exit' to leave program."
+      puts "Choose another number or type 'list' to see books again or 'main to get back to main menu or 'exit' to leave program."
         elsif input == "main"
           start
       elsif input == "exit"
@@ -95,7 +95,7 @@ def menu_atlas
       link = Hogwarts::Atlas.all[input.to_i-1]
       puts "#{link.url}"
       puts ""
-      puts "Choose another number or type 'list' to see atlas again or 'exit' to leave program."
+      puts "Choose another number or type 'list' to see atlas again or 'main' to get back to main menu or 'exit' to leave program."
         elsif input == "main"
           start
       elsif input == "exit"
