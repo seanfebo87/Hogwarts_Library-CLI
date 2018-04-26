@@ -60,6 +60,7 @@ def menu_textbook
     input = gets.strip.downcase
       if input.to_i > 0 && input.to_i <= 35
       link = Hogwarts::Textbooks.all[input.to_i-1]
+      puts ""
       puts "#{link.url}"
       puts ""
       puts "Choose another number or type 'list' to see books again or 'main to get back to main menu or 'exit' to leave program."
@@ -95,6 +96,7 @@ def menu_atlas
     input = gets.strip.downcase
     if input.to_i > 0 && input.to_i <= 35
       link = Hogwarts::Atlas.all[input.to_i-1]
+      puts ""
       puts "#{link.url}"
       puts ""
       puts "Choose another number or type 'list' to see atlas again or 'main' to get back to main menu or 'exit' to leave program."
