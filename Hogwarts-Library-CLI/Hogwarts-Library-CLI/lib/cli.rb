@@ -1,3 +1,6 @@
+require "Hogwarts/Library/CLI/version"
+
+
 class Hogwarts::CLI
 
 def start
