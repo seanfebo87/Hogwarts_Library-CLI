@@ -24,12 +24,13 @@ end
 def menu
     puts ""
     puts "Enter the number of the category you would like a list of or 'exit to leave."
+    while input != "exit"
     input = gets.strip
       case input
       when "1"
-        textbooks
+        textbooks(@@books)
       when "2"
-        atlas
+        atlas(@@atlas)
       when "exit"
         goodbye
       else
