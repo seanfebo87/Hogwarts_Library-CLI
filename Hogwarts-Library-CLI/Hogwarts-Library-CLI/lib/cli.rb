@@ -1,6 +1,7 @@
 class Hogwarts::CLI
 
 def start
+    puts ""
     puts "----------Welcome to the Hogwarts Library!----------"
     puts ""
     puts "1. TextBooks"
@@ -68,6 +69,7 @@ def menu_textbook
         goodbye
       elsif input == "list"
         @@textbooks.each.with_index(1) do |title, i|
+      puts ""
       puts "#{i}. #{title.name}"
     end
       else
@@ -102,6 +104,7 @@ def menu_atlas
         goodbye
       elsif input == "list"
         @@atlas.each.with_index(1) do |title, i|
+      puts ""
       puts "#{i}. #{title.name}"
     end
       else
