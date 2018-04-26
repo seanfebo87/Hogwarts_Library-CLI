@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    Hogwarts-Library-CLI (0.3.0)
+    Hogwarts-Library-CLI (0.4.0)
       nokogiri
 
 GEM
