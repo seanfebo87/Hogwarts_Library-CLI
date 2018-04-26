@@ -26,4 +26,8 @@ class Hogwarts::Atlas
         end
         maps
     end
+
+    def self.all
+        @@all
+    end
 end
