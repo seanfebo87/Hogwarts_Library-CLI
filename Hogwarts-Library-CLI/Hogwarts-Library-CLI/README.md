@@ -1,8 +1,6 @@
 # Hogwarts::Library::CLI
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/Hogwarts/Library/CLI`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to the Hogwarts Library! This is a very simple gem that provides you urls for information regarding Hogwarts' textbooks and an atlas of Hogwarts. 
 
 ## Installation
 
@@ -22,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+When the gem starts you will be given a menu. Follow the prompts and you will be on your way!
 
 ## Development
 
