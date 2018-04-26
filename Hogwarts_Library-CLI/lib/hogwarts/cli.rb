@@ -24,7 +24,7 @@ end
 def menu
     input = nil
     puts ""
-    puts "Enter the number of the category you would like a list of or 'exit to leave."
+    puts "Enter the number of the category you would like a list of or 'exit to leave program."
     while input != "exit"
     input = gets.strip
       case input
@@ -43,6 +43,18 @@ def textbooks(books)
     puts ""
     @@books.each.with_index(1) do |title, i|
       puts "#{i}. #{title.name}"
+    end
+    puts ""
+    puts "Please select a book number for link to more info or type 'exit' to leave program."
+    menu_textbook
+end
+
+def menu_textbook
+    if input.to_i > 0 && input.to_i <= 35
+      link = Hogwarts::Studies.all[input.to_i-1]
+      puts "#{link.url}"
+      puts ""
+      puts "Choose another number or type 'list' to see books again"
     end
 end
 
