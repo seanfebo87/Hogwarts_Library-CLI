@@ -46,7 +46,7 @@ end
 
 def textbooks(books)
     puts ""
-    @@textbooks.each.with_index(1) do |title, i|
+    Hogwarts::Textbooks.all.each.with_index(1) do |title, i|
       puts "#{i}. #{title.name}"
     end
     puts ""
