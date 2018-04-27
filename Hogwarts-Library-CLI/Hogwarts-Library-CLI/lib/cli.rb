@@ -70,7 +70,7 @@ def menu_textbook
         goodbye
       elsif input == "list"
           puts ""
-        @@textbooks.each.with_index(1) do |title, i|
+        Hogwarts::Textbooks.all.each.with_index(1) do |title, i|
       puts "#{i}. #{title.name}"
     end
       else
@@ -81,7 +81,7 @@ end
 
 def atlas(atlas)
     puts ""
-    @@atlas.each.with_index(1) do |title, i|
+    Hogwarts::Atlas.all.each.with_index(1) do |title, i|
       puts "#{i}. #{title.name}"
     end
     puts ""
@@ -106,7 +106,7 @@ def menu_atlas
         goodbye
       elsif input == "list"
         puts ""
-        @@atlas.each.with_index(1) do |title, i|
+        Hogwarts::Atlas.all.each.with_index(1) do |title, i|
       puts "#{i}. #{title.name}"
     end
       else
